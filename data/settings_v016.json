@@ -1,0 +1,75 @@
+{
+ "module": "fr5pour",
+ "version": "0.1.7",
+ "md5": {
+  "pose_go.py": "7545987c4dcc7f68c71f2496c6e5cee3",
+  "pour_run.py": "81c5b7176e9f7704dc100a5f714b9f07",
+  "pour_ui.py": "de4d5c6592cb5a4af3240588069411b7",
+  "detect_probe.py": "41d0335b2e02f004e315359d544ebd18",
+  "pour_report.py": "8529abd79cd5b85dd85284d4b9bac67d",
+  "pour_export.py": "99e1f002db971d139dd71b841dc317ee"
+ },
+ "screen": {
+  "place_source": "자동 찾기",
+  "pour_shift_mm": [
+   24.0,
+   -20.0
+  ],
+  "grasp_shift_mm": [
+   1.3,
+   16.0
+  ],
+  "grasp_dz_mm": -5.0,
+  "gripper_close": 510,
+  "gripper_open": 900,
+  "overlay_offset_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ "pour_run_defaults": {
+  "approach_mm": 80.0,
+  "place_gap_mm": 2.0,
+  "z_lift_mm": 230.0,
+  "grip_wait_s": 1.5,
+  "pour_hold_s": 1.0,
+  "vmax_deg_s": 10.0,
+  "v_tilt_deg_s": 10.0,
+  "j5_switch_deg": 12.0,
+  "v_lin_mm_s": 50.0,
+  "v_down_mm_s": 25.0,
+  "v_ang_deg_s": 20.0,
+  "max_lag_deg": 8.0
+ },
+ "geometry_mm": {
+  "table_z": 36.8,
+  "small_beaker": {
+   "top_diameter": 55.0,
+   "height": 66.5
+  },
+  "big_beaker": {
+   "top_diameter": 92.0,
+   "height": 105.0
+  },
+  "tool_offset_from_flange": 168.4,
+  "S_ref": [
+   24.1,
+   650.7
+  ],
+  "B_ref": [
+   214.3,
+   575.1
+  ]
+ },
+ "detection": {
+  "hue_deg": [
+   70.0,
+   240.0
+  ],
+  "v_min": 150,
+  "iou_ok": 0.75,
+  "search_box_mm": "기준 자리 ± (160, 120)"
+ },
+ "random_region_mm": "기준 자리 ± (120, 80), S–B 중심 거리 ≥ 140",
+ "note": "0.1.7 = 0.1.6 + fr5rec 가 녹화 시작을 거절하면(ok false) 실행하지 않고 멈춤. 조정값 · 동작은 0.1.6 과 같다"
+}
